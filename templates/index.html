@@ -1,4 +1,4 @@
-{% extends "nav.html" %}
+
 {% extends "layout.html" %}
 
 {% block heading %}
@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block body %}
+<h2> Reserve a table! </h2>
     <form action="{{ url_for('hello') }}" method="post">
         <input type="text" name="name" placeholder="Enter your Name!">
         <button>Submit</button>
